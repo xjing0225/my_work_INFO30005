@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>Safety Tips</h1>
+        <p id="foo">tip0</p>
+        <link rel = "stylesheet", href = "styles.css">
+        <script type="text/javascript">
+            var nextWord = (function() {
+                var wordArray = ['In your eyes','I see theres somthing burning inside', 'Oh','inside~'];
+                var count = -1;
+                return function() {
+                    return wordArray[++count % wordArray.length];
+                }
+            }());
+        </script> 
+    </head>
+    <body>
+        <button onclick="document.getElementById('foo').innerHTML = nextWord();">Next Tip!</button>
+    </body>    
+</html> 
+
